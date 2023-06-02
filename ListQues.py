@@ -11,10 +11,9 @@ Write function for following opeartions :
 my_list = [1,2,3,4,5]
 
 # 1. swap any 2 element of which indexes are passed
-
-    #create a function to make the swap action
-def swap(swap_list, ele_one, ele_two):
-    swap_list[ele_one], swap_list[ele_two] = swap_list[ele_two], swap_list[ele_one]
+    #create a function to make the swap action (a,b = b,a)
+def swap(swap_list, index_one, index_two):
+    swap_list[index_one], swap_list[index_two] = swap_list[index_two], swap_list[index_one]
     return swap_list
 
 print(my_list)
@@ -27,6 +26,7 @@ print(my_list)
 
 # 2. maximum value of the list
 print("max value of list: ",max(my_list))
+
 
 # 3. minimum value of the list
 print("min value of list: ",min(my_list))
