@@ -13,15 +13,15 @@ my_list = [1,2,3,4,5]
 # 1. swap any 2 element of which indexes are passed
 
     #create a function to make the swap action
-def swap(lst, a, b):
-    lst[a], lst[b] = lst[b], lst[a]
-    return lst
+def swap(swap_list, ele_one, ele_two):
+    swap_list[ele_one], swap_list[ele_two] = swap_list[ele_two], swap_list[ele_one]
+    return swap_list
 
 print(my_list)
 
-val1 = input("Enter val 1 \n")
-val2 = input("Enter val 2 \n")
-print(swap(my_list,int (val1),int (val2)))
+val_one = input("Enter val 1 \n") #index of 1st element
+val_two = input("Enter val 2 \n") #index of 2nd element
+print(swap(my_list,int (val_one),int (val_two)))
 print(my_list)
 
 
